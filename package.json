@@ -1,0 +1,16 @@
+{
+  "name": "srv_tracking",
+  "version": "1.0.0",
+  "description": "Realtime tacking server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manuel Sepulveda",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.4.21",
+    "socket.io": "^2.2.0"
+  }
+}

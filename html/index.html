@@ -8,23 +8,16 @@
     <script src="/socket.io/socket.io.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
     <script>
-        
         $(function () {
             var socket = io();
             socket.emit("send_data");
             socket.on('get_data', function(data){
                 $('#log').html(JSON.stringify(data));
             });
-
-            $("#add").click(function(){
-                socket.emit('tracking', {lat: 1, long: 2, of: 99003930320, imei: 382759402918234 });
-            });
         });
     </script>
 </head>
 <body>
-    <h1>jelou</h1>
-    <button id="add">Enviar</button>
     <div id="log"></div>
 </body>
 </html>
